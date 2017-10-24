@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METADATA>
+
+	<Environment Name="HA ENVIRONMENT" Enabled="True">
+		<Global>
+			<DomainName>HA.lab</DomainName>
+			<CollectionName>HA-COLLECTION</CollectionName>
+			<RDSHA>True</RDSHA>
+			<RDSDNSRRName>RDSGateway</RDSDNSRRName>
+		</Global>
+
+		<VMSettings>
+			<ComputerName>HA-DC1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<StaticIP>IPADDRESS.201</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-DC2</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<StaticIP>IPADDRESS.202</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-GW1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<StaticIP>IPADDRESS.203</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-GW2</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<StaticIP>IPADDRESS.204</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-SH1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<VMMemory>8GB</VMMemory>
+			<StaticIP>IPADDRESS.205</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-SH2</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<VMMemory>8GB</VMMemory>
+			<StaticIP>IPADDRESS.206</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>HA-SQL1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<VMMemory>8GB</VMMemory>
+			<StaticIP>IPADDRESS.207</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+
+		<VMDefaults>
+			<ProductKey>PRODUCTKEY</ProductKey>
+			<VMMemory>4GB</VMMemory>
+			<VMMemoryType>Dynamic</VMMemoryType>
+			<VMVHDSize>20GB</VMVHDSize>
+			<VMProcessorCount>4</VMProcessorCount>
+			<OSEdition>ServerStandard</OSEdition>
+			<OSISOPath>Server_2012R2.iso</OSISOPath>
+			<HVRootDir>C:\Hyper-V</HVRootDir>
+			<VMSwitch>Virtual Switch</VMSwitch>
+			<StaticIP></StaticIP>
+			<NextHopAddress></NextHopAddress>
+		</VMDefaults>
+
+	</Environment>
+
+		<Environment Name="STAND-ALONE ENVIRONMENT" Enabled="False">
+		<Global>
+			<DomainName>SA.lab</DomainName>
+			<CollectionName>TEST-COLLECTION</CollectionName>
+			<RDSHA>False</RDSHA>
+			<RDSDNSRRName>SERVERROLE</RDSDNSRRName>
+		</Global>
+
+		<VMSettings>
+			<ComputerName>SA-DC1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<VMMemory>4GB</VMMemory>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+		<VMSettings>
+			<ComputerName>SA-RDS1</ComputerName>
+			<ServerRole>SERVERROLE</ServerRole>
+			<StaticIP>IPADDRESS.222</StaticIP>
+			<OSISOPath>TEMPLATE.vhdx</OSISOPath>
+		</VMSettings>
+
+
+		<VMDefaults>
+			<ProductKey>PRODUCTKEY</ProductKey>
+			<VMMemory>4GB</VMMemory>
+			<VMMemoryType>Dynamic</VMMemoryType>
+			<VMVHDSize>20GB</VMVHDSize>
+			<VMProcessorCount>4</VMProcessorCount>
+			<OSEdition>ServerStandard</OSEdition>
+			<OSISOPath>Server_2012R2.iso</OSISOPath>
+			<HVRootDir>C:\Hyper-V</HVRootDir>
+			<VMSwitch>Virtual Switch</VMSwitch>
+			<StaticIP></StaticIP>
+			<NextHopAddress></NextHopAddress>
+		</VMDefaults>
+
+	</Environment>
+
+</METADATA>
